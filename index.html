@@ -1,126 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Praveen Chaudhary | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <!-- ===== Header ===== -->
-  <header>
-    <h1>Praveen Chaudhary</h1>
-    <p>Computer Science Graduate | Chandigarh University</p>
-    <a href="assets/resume/resume.pdf" target="_blank" class="resume-btn">📄 View Resume</a>
+  <nav class="navbar">
+    <h1 class="logo">Praveen<span>Chaudhary</span></h1>
+    <a href="assets/resume/resume.pdf" target="_blank" class="btn">View Resume</a>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h2>Hello, I'm <span>Praveen Chaudhary</span></h2>
+      <p>B.Sc. Computer Science | Chandigarh University</p>
+    </div>
   </header>
 
-  <!-- ===== About Me ===== -->
   <section id="about">
     <h2>About Me</h2>
-    <div class="about-container">
-      <p>
-        Hello! I'm <strong>Praveen Chaudhary</strong>, a passionate learner with a B.Sc. in Computer Science from
-        Chandigarh University. I love exploring technology, playing sports, and creating projects that solve real-world
-        problems.
-      </p>
-
-      <div class="about-columns">
-        <div class="about-box">
-          <h3>🎓 Education</h3>
-          <ul>
-            <li>10th – Kendriya Vidyalaya No.1 AFS Adampur (2018) – 73.8%</li>
-            <li>12th – Kendriya Vidyalaya No.1 AFS Adampur (2020) – 88.4%</li>
-            <li>B.Sc. Computer Science – Chandigarh University (2021–2024) – CGPA: 8.48</li>
-          </ul>
-        </div>
-
-        <div class="about-box">
-          <h3>💻 Skills</h3>
-          <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Python, Java, PHP, C, C++, DSA</li>
-            <li>Adaptability, Teamwork, Time Management</li>
-          </ul>
-        </div>
-
-        <div class="about-box">
-          <h3>⚡ Hobbies</h3>
-          <ul>
-            <li>Sports (Basketball & Cricket)</li>
-            <li>Gaming</li>
-            <li>Learning New Skills</li>
-            <li>Surfing the Internet</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <p>
+      Passionate Computer Science graduate with strong interest in software development, problem solving, and sports. I
+      enjoy learning modern technologies and creating useful projects.
+    </p>
   </section>
 
-  <!-- ===== Achievements ===== -->
   <section id="achievements">
     <h2>Achievements</h2>
-    <div class="cards">
-
+    <div class="grid">
       <div class="card">
-        <img src="https://source.unsplash.com/600x400/?basketball,team" alt="Basketball">
+        <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=600&q=60" alt="Basketball">
         <h3>Regional Basketball Championships</h3>
-        <p>Represented the school team and competed at the regional level three times.</p>
+        <p>Represented the school team three times at regional level tournaments.</p>
       </div>
 
       <div class="card">
-        <img src="https://source.unsplash.com/600x400/?fighter-jet,airforce" alt="AFCAT">
+        <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=600&q=60" alt="Jet">
         <h3>AFCAT Cleared</h3>
-        <p>Successfully cleared the Air Force Common Admission Test (AFCAT).</p>
+        <p>Cleared the Air Force Common Admission Test demonstrating discipline and focus.</p>
       </div>
 
       <div class="card">
-        <img src="https://source.unsplash.com/600x400/?students,exam" alt="CGCAT">
+        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=600&q=60" alt="Exam">
         <h3>CGCAT Cleared</h3>
-        <p>Cleared CGCAT demonstrating strong analytical and reasoning abilities.</p>
+        <p>Achieved success in CGCAT with strong analytical performance.</p>
       </div>
 
       <div class="card">
-        <img src="https://source.unsplash.com/600x400/?graduation,celebration" alt="COMEDK">
+        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=600&q=60" alt="Graduation">
         <h3>COMEDK Cleared</h3>
-        <p>Cleared COMEDK examination with excellent performance among peers.</p>
+        <p>Performed among top candidates in COMEDK entrance examination.</p>
       </div>
-
-      <div class="card">
-        <img src="https://source.unsplash.com/600x400/?college,basketball" alt="Inter Department Basketball">
-        <h3>Inter-department Basketball</h3>
-        <p>Played inter-department tournaments representing my Computer Science department.</p>
-      </div>
-
-      <div class="card">
-        <img src="https://source.unsplash.com/600x400/?college,cricket" alt="Inter Department Cricket">
-        <h3>Inter-department Cricket</h3>
-        <p>Participated in college-level cricket tournaments promoting team spirit.</p>
-      </div>
-
     </div>
   </section>
 
-  <!-- ===== Contact ===== -->
   <section id="contact">
     <h2>Contact Me</h2>
-    <form action="https://formspree.io/f/maypzeek" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="_replyto" placeholder="Your Email" required>
+    <form action="https://formspree.io/f/maypzeek" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="_replyto" placeholder="Your Email" required />
       <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message ✉️</button>
+      <button type="submit" class="btn">Send Message</button>
     </form>
-    <p>Or email me directly at <a href="mailto:Pc2552003@gmail.com">Pc2552003@gmail.com</a></p>
+    <p>Email me at <a href="mailto:Pc2552003@gmail.com">Pc2552003@gmail.com</a></p>
   </section>
 
-  <!-- ===== Footer ===== -->
   <footer>
-    <p>© 2025 Praveen Chaudhary | Designed with ❤️ using HTML, CSS & JS</p>
+    <p>© 2025 Praveen Chaudhary · Built with HTML & CSS</p>
   </footer>
 
-  <script>
-    console.log("🌈 Portfolio loaded successfully!");
-  </script>
+  <script>console.log("Portfolio loaded");</script>
 </body>
 </html>
